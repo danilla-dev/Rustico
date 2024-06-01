@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+button {
+	background-color: transparent;
+	border-color: transparent;
+	padding: 1em 2em;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2rem;
+	color: white;
+}
+a.active {
+	color: rgb(242 181 36);
+}
+ul {
+	li {
+		list-style: none;
+	}
+}
+.home-page {
+	&__bg {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: calc(100vh - 120px);
+		background-image: url('./assets//heder-img-sm.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+	&__bg-context {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1em;
+		background-color: #857c7cd0;
+		max-width: 450px;
+		border-radius: 15px;
+		h1 {
+			color: rgb(253 205 50);
+			font-weight: bold;
+			font-size: 4rem;
+		}
+		p {
+			color: black;
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+	&__btn {
+		padding: 0.5em 1em;
+		width: 35%;
+		text-align: center;
+		border: 5px solid rgb(253 205 50);
+		border-radius: 15px;
+		transition: 0.4s;
+		cursor: pointer;
+		a {
+			padding: 0.5em;
+			color: white;
+		}
+		&:hover {
+			background-color: rgb(253 205 50);
+			a {
+				color: black;
+			}
+		}
+	}
+}
